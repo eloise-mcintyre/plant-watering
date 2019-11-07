@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Bootstrap cheatsheet</title>
+  </head>
+  <body>
+    <!-- Topography -->
+    <div class="container"> <!--pushes the div along a bit-->
+      <h1 class="pb-2 mt-4 mb-2 border-bottom">Hello, world! <small>Secondary Text</small></h1>
+      <p class="lead">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quos in temporibus deserunt non ea velit consequatur odit illo laboriosam nulla et sit nostrum corrupti explicabo veniam, quibusdam id porro? Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, suscipit? 
+      </p>
+
+      <p>
+          <mark>Quo nemo eligendi asperiores enim nisi ratione architecto quod possimus dolorem in distinctio atque facere,</mark> alias eaque numquam totam voluptates! Lorem ipsum dolor sit, <del>amet consectetur adipisicing elit.</del> Aliquid veniam nesciunt placeat? Illo iusto placeat, libero numquam officiis dicta possimus corporis et, rem ea quidem! Natus <u>veritatis rem tenetur repudiandae?</u> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga quisquam repellat voluptate veritatis provident perferendis odit eos! Possimus magni labore nulla, rerum omnis quisquam unde maiores rem nam consequuntur quo.
+      </p>
+
+      <hr>
+
+      <!-- ALIGNMENT & TRANSFORMATION-->
+      <p class="text-left text-lowercase">Left aligned test.</p>
+      <p class="text-center text-uppercase">Center aligned test.</p>
+      <p class="text-right text-capitalize">Right aligned test.</p>
+      <p class="text-justify">Justified test.</p>
+      <p class="text-nowrap">No Wrap test.</p>
+
+      <!-- QUICK FLOATS -->
+      <div class="float-right">Div floated to right</div>
+      <div class="float-left">Div floated to left</div>
+
+      <!-- CLEAR FLOAT -->
+      <div class="clearfix"></div>
+      <hr>
+
+
+      <!-- BLOCKQUOTE -->
+      <blockquote class="blockquote">
+          <p>For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.</p>
+          <footer class="blockquote-footer">Quote by <cite title="John Doe">WWF's website</cite></footer>
+        </blockquote>
+
+        <hr>
+
+      <!-- LISTS -->
+      <ul class="list-unstyled">
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+        <li>Item Four</li>
+        </ul>
+
+        <!-- CODE -->
+      <code>&lt;h1&gt;Heading Text&lt;/h1&gt;</code>
+      <br>
+      Change directory with<kbd>cd</kbd>
+      <br>
+      To edit settings, press <kbd><kbd>ctrl</kbd> + <kbd>,</kbd></kbd>
+
+      <hr>
+
+      <!-- CONTEXTUAL COLORS -->
+      <p class="text-primary">Hello World</p>
+      <p class="text-success">Hello World</p>
+      <p class="text-info">Hello World</p>
+      <p class="text-warning">Hello World</p>
+      <p class="text-danger">Hello World</p>
+      <p class="text-muted">Hello World</p>
+
+      <!-- CONTEXTUAL BACKGROUND COLORS -->
+      <p class="bg-primary">Hello World</p>
+      <p class="bg-success">Hello World</p>
+      <p class="bg-info">Hello World</p>
+      <p class="bg-warning">Hello World</p>
+      <p class="bg-danger">Hello World</p>
+      <p class="bg-muted">Hello World</p>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <!-- BUTTONS -->
+        <div class="container">
+        <button class="btn-outline-secondary">Button</button>
+        <a href="#" class="btn-outline-secondary" role="button">Link</a>
+        <input type="submit" class="btn-outline-secondary" value="Submit">
+        <br>
+        <br>
+
+        <!-- CONTEXTUAL BUTTONS -->
+        <button class="btn btn-default">Default</button>
+        <button class="btn btn-primary">Primary</button>
+        <button class="btn btn-success">Success</button>
+        <button class="btn btn-info">Info</button>
+        <button class="btn btn-warning">Warning</button>
+        <button class="btn btn-danger">Delete</button>
+        <button class="btn btn-link">Link</button>
+        <br>
+
+        <!-- BUTTON SIZES -->
+        <button class="btn-lg">Default</button>
+        <button class="">Default</button>
+        <button class="btn btn-primary btn-sm">Default</button>
+        <button disabled="disabled">Default</button>
+      </div>
+  
+      <hr>
+
+      <!-- FORMS -->
+      <div class="container">
+        <form>
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" placeholder="Add Name">
+          </div>
+    
+          <div class="form-group">
+            <label>Email</label>
+             <input type="email" class="form-control" placeholder="Add Email">
+          </div>
+    
+          <div class="form-group">
+            <label>Message</label>
+            <textarea class="form-control" placeholder="Add Message"></textarea>
+          </div>
+    
+          <div class="form-group">
+             <label>Gender</label>
+            <select class="form-control">
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+    
+          <div class="form-group">
+            <label>Upload File</label>
+            <input type="file">
+            <p class="help-block">Only png and jpg allowed</p>
+          </div>
+    
+          <div class="checkbox">
+            <label>
+              <input type="checkbox"> Check me out
+            </label>
+          </div>
+    
+          <button type="submit" class="btn btn-default">Submit</button>
+        </form>
+    
+        <hr>
+    
+        <!-- INLINE FORM -->
+        <form class="form-inline">
+          <div class="form-group">
+            <label>Email </label>
+            <input type="email" class="form-control" placeholder="Email">
+          </div>
+          <div class="form-group">
+            <label>Password </label>
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="checkbox">
+          <label>
+            <input type="checkbox"> Remember me
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </div>
+    </div>
+    <hr>
+
+    <!-- TABLES -->
+    <div class="container">
+        <table class="table table-striped table-bordered table-hover">
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Age</th>
+          </tr>
+          <tr class="table-danger">
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>24</td>
+          </tr>
+          <tr class="table-success">
+            <td>John</td>
+            <td>Doe</td>
+            <td>34</td>
+          </tr>
+          <tr>
+            <td>Stephanie</td>
+            <td>Landon</td>
+            <td>47</td>
+          </tr>
+          <tr>
+            <td>Mike</td>
+            <td>Johnson</td>
+            <td>19</td>
+          </tr>
+        </table>
+      </div>
+
+
+    </div>
+    <hr>
+
+    <!-- LIST GROUP -->
+    <div class="container">
+        <ul class="list-group">
+          <li class="list-group-item">Item One</li>
+          <li class="list-group-item">Item Two</li>
+          <li class="list-group-item">Item Three</li>
+          <li class="list-group-item">Item Four</li>
+        </ul>
+        <br>
+        <div class="list-group">
+            <a href="#" class="list-group-item active">Item One</a>
+            <a href="#" class="list-group-item">Item Two</a>
+            <a href="#" class="list-group-item list-group-item-success">Item Three</a>
+            <a href="#" class="list-group-item disabled">Item Four</a>
+          </div>
+      </div>
+      
+    <br> 
+
+    <div class="container">
+        <!-- CARDS -->
+        <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">Another link</a>
+            </div>
+          </div>
+  
+        <hr>
+
+    
+      <!-- ALERTS -->
+      <div class="alert alert-success" role="alert">A success alert</div>
+      <div class="alert alert-info" role="alert">An info alert</div>
+      <div class="alert alert-warning" role="alert">A warning alert</div>
+      <div class="alert alert-danger" role="alert">A danger alert</div>
+
+      <div class="alert alert-warning alert-dismissible" role="alert">
+        <button type="button" class="close" data-dismiss="alert"><span>&times;</span></button>
+        You can close this alert
+      </div>
+
+      <!-- PROGRESS BARS -->
+      <div class="progress">
+        <div class="progress-bar progress-bar-success progress-bar-striped active" style="width:50%;">
+          50%
+        </div>
+      </div>
+
+      <hr>
+
+
+      <!-- BADGES -->
+      <a href="#">Inbox <span class="badge">50</span></a>
+
+      <button class="btn btn-primary" type="button">
+        Messages <span class="badge">2</span>
+      </button>
+    </div>
+
+    <br>
+    <br>
+
+    <!-- IMAGES -->
+    <div class="container">
+        <img class="thumbnail" src="https://via.placeholder.com/150">
+        <img class="img-rounded" src="https://via.placeholder.com/150"><br><br>
+        <img class="img-circle" src="https://via.placeholder.com/150">
+      </div>
+  
+      <hr>
+
+      <!-- GRIDS -->
+    <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-8 col-xs-8">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-md-4 col-sm-4 col-xs-4">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="col-md-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="col-md-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+          <div class="col-md-3">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-md-6">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et </p>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+          <div class="col-md-1">
+            <h3>Box</h3>
+          </div>
+        </div>
+      </div>
+  
+
+    <div style="height:400px"></div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+  </body>
+</html>
