@@ -1,8 +1,17 @@
 import React from 'react'
+import SignUpJumbo from './SignUpJumbo'
+import FormPage from './FormPage'
+import Nav from './Nav'
+
+import { Route } from 'react-router-dom'
 
 const App = () => {
   return (
-    <h1>React development has begun!</h1>
+    <>
+    <Route path='/' component = { Nav } />
+    <Route exact path='/' component = { SignUpJumbo } />
+    <Route path='/form' component = { FormPage }/>
+    </>
   )
 }
 
