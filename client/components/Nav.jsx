@@ -16,6 +16,13 @@ class Nav extends React.Component {
           />
           {` Elly's PlantBook `}
         </Navbar.Brand>
+        
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            {/* The link below needs to be updated */}
+            <a href="#">Login</a>
+          </Navbar.Text>
+        </Navbar.Collapse>
       </Navbar>
 
     </>
