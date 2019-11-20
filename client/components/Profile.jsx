@@ -14,7 +14,7 @@ function secondsToDhms (waterTime) {
   var hDisplay = h > 0 ? h + (h == 1 ? ' hour, ' : ' hours, ') : ''
   var mDisplay = m > 0 ? m + (m == 1 ? ' minute, ' : ' minutes, ') : ''
   var sDisplay = s > 0 ? s + (s == 1 ? ' second' : ' seconds') : ''
-  return dDisplay + hDisplay + mDisplay + sDisplay
+  return dDisplay + hDisplay + mDisplay + sDisplay + 'remaining'
 }
 
 const correctTime = secondsToDhms(waterTime)
@@ -98,7 +98,10 @@ class Profile extends React.Component {
                 {/* <td>1</td> */}
                 <td style={{ textAlign: 'center' }}><Image height="150" width="150" src="images/monstera.jpg"/></td>
                 <td>Monstera Deliciosa</td>
-                <td>{this.state.correctTime}</td>
+                <td>
+                  <div className="alert alert-success" role="alert">
+                    {this.state.correctTime}
+                  </div></td>
                 <td style={{ textAlign: 'center' }}>
                   <Image onClick={this.water} className="wateringCan" src="images/wateringCan.png"/>
                 </td>
@@ -107,7 +110,11 @@ class Profile extends React.Component {
                 {/* <td>2</td> */}
                 <td style={{ textAlign: 'center' }}><Image height="150" width="150" src="images/zanzibar.jpg"/></td>
                 <td>Zanzibar Gem</td>
-                <td>What to put here?</td>
+                <td>
+                  <div className="alert alert-danger" role="alert">
+                    Danger - PLANT UNDERWATERED
+                  </div>
+                </td>
                 <td style={{ textAlign: 'center' }}>
                   <Image className="wateringCan" src="images/wateringCan.png"/>
                 </td>
@@ -116,7 +123,11 @@ class Profile extends React.Component {
                 {/* <td>3</td> */}
                 <td style={{ textAlign: 'center' }}><Image height="150" width="150" src="images/pachira.jpg"/></td>
                 <td>Pachira Aquatica</td>
-                <td>What to put here?</td>
+                <td>
+                  <div className="alert alert-danger" role="alert">
+                    Danger - PLANT UNDERWATERED
+                  </div>
+                </td>
                 <td style={{ textAlign: 'center' }}>
                   <Image onClick={this.water} className="wateringCan" src="images/wateringCan.png"/>
                 </td>
