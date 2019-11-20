@@ -1,0 +1,13 @@
+.wateringCan {
+  height: 100px;
+  width: 100px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.wateringCan:hover {
+  /* height: 120px;
+  width: 120px; */
+  cursor: pointer;
+  transform: rotate(-20deg);
+  transition: all 0.3s ease-in-out 0s;
+}

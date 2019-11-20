@@ -42,6 +42,9 @@ class Pics extends React.Component {
           <Image src="/plant8.jpeg" fluid />
         </div>
       </div>
+      
+      <br></br>
+      <br></br>
     </div>
     </>
     )

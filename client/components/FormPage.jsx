@@ -1,6 +1,6 @@
 import React from 'react'
 import { Button, Form } from 'react-bootstrap'
-// import Form from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 // import { Group, Label, Control } from 'react-bootstrap/Form'
 
 class FormPage extends React.Component {
@@ -56,7 +56,7 @@ class FormPage extends React.Component {
 
             {/* Neecd a redirect to the users profile page in here */}
             <Button variant="primary" type="submit">
-            Submit
+              <Link to = {'/profile'} className="btn btn-primary">Submit</Link>
             </Button>
           </Form>
         </div>
