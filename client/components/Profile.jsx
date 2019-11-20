@@ -1,7 +1,25 @@
 import React from 'react'
 import { Table, Container, Image, Button } from 'react-bootstrap'
+import * as api from '../api'
 
 class Profile extends React.Component {
+  state = {
+    user: ''
+  }
+
+  componentDidMount () {
+    // Call API
+    api.getUser()
+      .then(response => {
+        // Update the state
+        this.setState({ user: response.body })
+      })
+      .catch(err => {
+        // Update the state
+        this.setState({ error: err.response.text })
+      })
+  }
+
   render () {
     return (
     <>

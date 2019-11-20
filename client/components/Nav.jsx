@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 class Nav extends React.Component {
   render () {
@@ -20,7 +21,7 @@ class Nav extends React.Component {
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text>
             {/* The link below needs to be updated */}
-            <a href="#">Login</a>
+            <Link to = {'/login'}>Log In</Link>
           </Navbar.Text>
         </Navbar.Collapse>
       </Navbar>

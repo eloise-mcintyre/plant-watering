@@ -19,15 +19,6 @@ class FormPage extends React.Component {
               <Form.Label>User Name</Form.Label>
               <Form.Control type="email" placeholder="Enter User Name" />
             </Form.Group>
-            {/* <Form.Label>Image</Form.Label>
-            <img className="img-responsive" src="https://dummyimage.com/600x400/000/fff" />
-            <input name="image[]" value="" type="checkbox"> </input>
-            <i className="fa fa-check hidden"></i> */}
-
-            {/* <Form.Group controlId="formBasicPassword">
-              <Form.Label>Password</Form.Label>
-              <Form.Control type="password" placeholder="Password" />
-            </Form.Group> */}
 
             <Form.Group controlId="formBasicCheckbox" style={{ textAlign: 'center' }}>
               <Form.Check type="checkbox" label="Monstera Deliciosa" name="plantsOwned" value="monstera"/>
@@ -41,20 +32,6 @@ class FormPage extends React.Component {
               <br></br> <br></br>
             </Form.Group>
 
-            {/* <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="image" src="https://dummyimage.com/100x100/000/fff" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="image" src="https://dummyimage.com/100x100/000/fff" />
-            </Form.Group>
-
-            <Form.Group controlId="formBasicCheckbox">
-              <Form.Check type="image" src="https://dummyimage.com/100x100/000/fff" />
-            </Form.Group> */}
-
-
-            {/* Neecd a redirect to the users profile page in here */}
             <Button variant="primary" type="submit">
               <Link to = {'/profile'} className="btn btn-primary">Submit</Link>
             </Button>
