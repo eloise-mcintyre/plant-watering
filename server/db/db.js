@@ -8,6 +8,13 @@ function getUser (id, database = db) {
     .first()
 }
 
+function postUser (name, database = db) {
+  return database('users')
+    .where('name', name)
+    .first()
+}
+
 module.exports = {
-  getUser
+  getUser,
+  postUser
 }
